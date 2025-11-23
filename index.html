@@ -53,12 +53,26 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open></button>
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-burger-icon"></use>
+        </svg>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container" data-menu-close>
+          <button class="mobile-menu-close">Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--header the end-->
     <!--section 1-->
     <main>
-      <section class="title-section">
+      <section class="title-section hidden">
         <div class="container">
           <h1 class="main-heading">Effective Solutions for Your Business</h1>
           <button class="button-title" type="button">Order Service</button>
@@ -66,7 +80,7 @@
       </section>
       <!--section 1 the end-->
       <!--section 2-->
-      <section class="paragraph-section">
+      <section class="paragraph-section hidden">
         <div class="container">
           <h2 class="visually-hidden">two section</h2>
           <ul class="paragreph-spase">
@@ -123,7 +137,7 @@
       </section>
       <!--section 2 the end-->
       <!--section 3-->
-      <section class="section-title">
+      <section class="section-title hidden">
         <div class="container">
           <h2 class="our-team">Our Team</h2>
           <ul class="two-ul">
@@ -348,7 +362,7 @@
       </section>
       <!--section 3 the end-->
       <!--section 4-->
-      <section class="section-portfolio">
+      <section class="section-portfolio hidden">
         <div class="container">
           <h2 class="our-portfolio">Our Portfolio</h2>
           <ul class="ul-our-portfolio">
@@ -472,7 +486,7 @@
       <!--section 4 the end-->
       <!--footer-->
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container-footer container">
         <div class="container-flex">
           <a class="logo-footer-logo" href="./index.html"
@@ -538,7 +552,8 @@
       </div>
     </footer>
     <!--footer the end-->
-    <div class="backdrop is-open">
+    <!-- is-open inside backdrop-->
+    <div class="backdrop is-open hidden">
       <div class="modal">
         <button class="backdrop-button" type="button">
           <svg class="icon-close" width="8" height="8">
@@ -627,5 +642,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
